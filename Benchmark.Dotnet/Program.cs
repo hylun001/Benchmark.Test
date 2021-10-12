@@ -14,12 +14,14 @@ namespace Benchmark.Dotnet
         static void Main(string[] args)
         {
 
+            //(new MessageQueueTest()).ZeromqTest();
             // p:BuildInParallel = false
             //BenchmarkRunner.Run<StringTest>(new AllowNonOptimized());
             //BenchmarkRunner.Run<SingleItemTest>(new AllowNonOptimized());
             //BenchmarkRunner.Run<IteratorTest>(new AllowNonOptimized());
             //BenchmarkRunner.Run<MultiThreadTest>(new AllowNonOptimized());
-            BenchmarkRunner.Run<ObjectMapperTest>(new AllowNonOptimized());
+            //BenchmarkRunner.Run<ObjectMapperTest>(new AllowNonOptimized());
+             BenchmarkRunner.Run<MessageQueueTest>(new AllowNonOptimized()); 
 
             Console.Read();
         }
